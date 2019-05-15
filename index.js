@@ -2,7 +2,7 @@ function applyForVisa(documents) {
     console.log('Wait...');
     let promise = new Promise(function(resolve, reject) { 
         setTimeout(function() {
-            Math.random() > 0 ? resolve({}) : reject('Negative');
+            Math.random() > .5 ? resolve({}) : reject('Negative');
         }, 1000);
     });
     return promise;
